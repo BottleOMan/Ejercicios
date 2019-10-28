@@ -6,8 +6,10 @@ perfecto = 0
 perfectosum = 0
 if a > b:
     for x in range(b + 1, a):
-        if x%2 == 0:
+        if x%2 == 0 and x != 0:
             par += 1
+        elif x == 0:
+            par += 0
         else:
             impar += 1
     for perf in range(b, a + 1):
